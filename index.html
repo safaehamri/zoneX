@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Example - Deep Dive - Updating Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style media="only screen">
+      :root,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      html {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: auto;
+        font-family: -apple-system, "system-ui", "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+
+      body {
+        padding: 16px;
+        overflow: auto;
+        background-color: transparent;
+      }
+
+      /* Hide codesandbox highlighter */
+      body > #highlighter {
+        display: none;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        margin-bottom: 10px;
+        background-color: rgb(133, 141, 141);
+        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 30px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="inputForm">
+      <label for="numero">Numero:</label>
+      <input type="number" id="numero" name="numero" />
+      <br />
+      <label for="article">Article:</label>
+      <input type="text" id="article" name="article" />
+      <br />
+      <label for="client">Client:</label>
+      <input type="text" id="client" name="client" />
+      <br />
+      <label for="quantite">Quantite:</label>
+      <input type="number" id="quantite" name="quantite" />
+      <br />
+      <label for="montant">Montant:</label>
+      <input type="number" id="montant" name="montant" />
+      <br />
+      <button type="submit">Add Row</button>
+      <button id="removeRowBtn" onclick="onRemoveSelected()">remove Row</button>
+    </form>
+    <div
+      id="myGrid"
+      style="width: 100%; height: 100%"
+      class="ag-theme-quartz"
+    ></div>
+    <script>
+      (function () {
+        const appLocation = "";
+
+        window.__basePath = appLocation;
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@31.2.0/dist/ag-grid-community.js?t=1710932466748"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

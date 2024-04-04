@@ -1,0 +1,37 @@
+[
+  {
+    "numero": 1,
+    "article": "Produit A",
+    "client": "Client 1",
+    "quantite": 10,
+    "montant": 100
+  },
+  {
+    "numero": 2,
+    "article": "Produit B",
+    "client": "Client 2",
+    "quantite": 20,
+    "montant": 200
+  },
+  {
+    "numero": 3,
+    "article": "Produit c",
+    "client": "Client 3",
+    "quantite": 20,
+    "montant": 200
+  },
+  {
+    "numero": 4,
+    "article": "Produit d",
+    "client": "Client 4",
+    "quantite": 20,
+    "montant": 200
+  },
+  {
+    "numero": 5,
+    "article": "Produit E",
+    "client": "Client 5",
+    "quantite": 20,
+    "montant": 200
+  }
+]
